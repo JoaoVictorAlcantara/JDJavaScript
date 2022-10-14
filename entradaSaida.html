@@ -1,0 +1,37 @@
+<h1>Zambo Anguissa</h1>
+
+nome=prompt("informe o nome");
+
+alert("olá, boa noite "+nombre);
+
+<hr>
+<form id="formulario">
+	<input type="text" id="n1">
+	<input type="text" id="n2">
+	<input type="submit">
+</form>
+<h2 id="som"></h2>
+<h2 id="sub"></h2>
+<h2 id="mul"></h2>
+<h2 id="div"></h2>
+
+<script type="text/javascript">
+	var form = document.getElementById('formulario');
+	var n1 = document.getElementById('n1');
+	var n2 = document.getElementById('n2');
+	var soma = document.getElementById('som');
+	var subtracao = document.getElementById('sub');
+	var multiplicacao = document.getElementById('mul');
+	var divisao = document.getElementById('div');
+
+	form.addEventListener('submit',function(e){
+		soma.innerText=parseInt(n1.value)+parseInt(n2.value);
+		subtracao.innerText=parseInt(n1.value)-parseInt(n2.value);
+		multiplicacao.innerText=parseInt(n1.value)*parseInt(n2.value);
+		divisao.innerText=parseInt(n1.value)/parseInt(n2.value);
+
+		e.preventDefault();
+	});
+
+</script>
+
